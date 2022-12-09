@@ -23,7 +23,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "http://Hinjar.github.io/sea_war",
+  "homepage": "https://lilhinjar.github.io/",
   "eslintConfig": {
     "extends": [
       "react-app",
