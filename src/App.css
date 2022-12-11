@@ -1,9 +1,9 @@
-.cell{
+.cell {
   width: 40px;
   height: 40px;
   border: 1px solid;
   cursor: pointer;
-  transition: .2s all;
+  transition: 0.2s all;
   margin-left: -1px;
   display: flex;
   align-items: center;
@@ -11,26 +11,26 @@
   position: relative;
 }
 
-.cell-active:hover{
+.cell-active:hover {
   background-color: #cccccc;
 }
 
-.cell-dead{
+.cell-dead {
   cursor: auto;
   background-color: antiquewhite;
 }
 
-.cell-container{
+.cell-container {
   display: flex;
   margin-bottom: -1px;
 }
 
-.cell-container-disabled{
+.cell-container-disabled {
   background-color: #cccccc;
   pointer-events: none;
 }
 
-.container{
+.container {
   width: 80%;
   display: flex;
   justify-content: space-between;
@@ -38,26 +38,25 @@
   margin-top: 50px;
 }
 
-.field-container{
+.field-container {
   position: relative;
-
 }
 
-.page-title{
+.page-title {
   font-size: 42px;
   font-weight: 500;
   width: 100%;
   text-align: center;
 }
 
-.miss{
+.miss {
   width: 4px;
   height: 4px;
   border-radius: 50%;
   background-color: black;
 }
 
-.question-miss{
+.question-miss {
   width: 15px;
   height: 15px;
   border-radius: 50%;
@@ -71,7 +70,8 @@
   transform: rotate(45deg);
 }
 
-.dead:before, .dead:after {
+.dead:before,
+.dead:after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -92,48 +92,48 @@
   width: 100%;
 }
 
-.cell-wrapper{
+.cell-wrapper {
   display: flex;
   align-items: center;
 }
 
-.cell-all-container{
+.cell-all-container {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
 
-.cell-word{
+.cell-word {
   width: 5px;
   margin-right: 15px;
   text-align: center;
   font-weight: 500;
 }
 
-.cell-number{
+.cell-number {
   width: 40px;
   text-align: center;
   margin-bottom: 5px;
   font-weight: 500;
 }
 
-.submitBtn{
+.submitBtn {
   width: 100% !important;
   margin-top: 15px !important;
 }
 
-.container-disabled{
+.container-disabled {
   pointer-events: none;
   background-color: #cccccc;
   opacity: 0.3;
 }
 
-.container-disabled:hover{
+.container-disabled:hover {
   background-color: #cccccc;
   opacity: 0.3;
 }
 
-.img{
+.img {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -142,11 +142,14 @@
   opacity: 0.3;
 }
 
-
-.under-text{
+.under-text {
   font-size: 18px;
   font-weight: 500;
   text-align: center;
   margin: 0 auto;
   margin-top: 15px;
+}
+.h2 {
+  font-size: 1.4vw;
+  white-space: nowrap;
 }
