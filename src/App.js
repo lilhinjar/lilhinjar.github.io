@@ -42,7 +42,7 @@ function App() {
       for (let b = 0; b < 10; b++) {
         const isShipField = !!indexes.find((elem) => elem === i * 10 + b + 1);
         if (isShipField) {
-          const questionIndex = Math.floor(Math.random() * questions.length);
+          const questionIndex = Math.floor(Math.random() * newQuestions.length);
 
           const question = newQuestions[questionIndex];
           mass[i].push({
@@ -92,6 +92,7 @@ function App() {
   }, [firstField]);
 
   const onCellClick = (cell, isRightAnswer, onChange) => {
+    if (cell.status !== "alive") return;
     const newCell = { ...cell };
     if (cell.isShip) {
       console.log(cell);
@@ -196,7 +197,7 @@ function App() {
     p: 4,
     outline: "none",
   };
-
+  console.log(questions)
   return (
     <div>
       <div className="page-title">Морской бой</div>
