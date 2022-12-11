@@ -44,7 +44,7 @@ function App() {
         if (isShipField) {
           const questionIndex = Math.floor(Math.random() * questions.length);
 
-          const question = questions[questionIndex];
+          const question = newQuestions[questionIndex];
           mass[i].push({
             isShip: true,
             status: "alive",
